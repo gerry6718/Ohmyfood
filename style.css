@@ -3,6 +3,10 @@
 	font-family: 'Roboto', sans-serif;
 }
 
+.main-container {
+	height: 2500px;
+}
+
 h1 {
 	font-family: 'Shrikhand', serif;
 }
@@ -13,12 +17,10 @@ body {
 
 /*****Header******/
 header {
-	width: 100%;
 	height: 110px;
 }
 
 .logo {
-	
 	padding: 14px 100px 10px 100px;
 }
 
@@ -46,12 +48,11 @@ header {
 .hero {
 	background-color: #F3F6F4;
 	text-align: center;
-	width: 100%;
 	height: 290px;
-	padding-top: 35px;
+	padding-top: 14px;
 }
 
-h2 {
+.hero h2 {
 	font-size: 30px;
 	padding-left: 35px;
 	padding-right: 45px;
@@ -75,3 +76,154 @@ button {
     border-radius: 25px;
 }
 
+/*****Fonctionnement*****/
+.fonctionnement {
+	height: 390px;
+	margin-top: 45px;
+	padding: 0 20px;
+}
+
+ol {
+	counter-reset: fonction; /**j'initialise et nomme le compteur**/
+	padding-inline-start: 2px;
+}
+
+li {
+	list-style-type: none;
+	counter-increment: fonction; /**j'incrémente le compteur à chaque nouveau li**/
+	display: flex;
+	align-items: center;
+	width: 95%;
+	height: 75px;
+	margin-left: 10px;
+	margin-bottom: 25px;
+	background: #F3F6F4;
+	border-radius: 20px;
+	font-weight: bold;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+li::before {
+	content: counter(fonction); /**j'affiche le compteur**/
+	margin: 4px 8px 0 -10px;
+	padding-top: 4px;
+	text-align: center;
+	background: #9356DC;
+	border-radius: 50%;
+	width: 24px;
+	height: 20px;
+	font-size: 15px;
+	font-weight: normal;
+	color: white;
+}
+
+.fonctionnement .fa-solid {
+	padding: 12px 28px 16px 20px;
+	color: dimgrey;
+	font-size: 20px;
+}
+
+.fonctionnement .fa-store {
+	color: #9356DC;
+}
+
+/***Restaurants***/
+.restaurants {
+	width: 100%;
+	height: 1265px;
+	background-color: #F3F6F4;
+	padding-left: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.resto-title {
+	padding-top: 40px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px; 
+    margin-top: 20px;
+}
+
+.resto-cards {
+	width: 90%;
+}
+
+.resto-cards .card {
+    width: 100%;
+    height: 255px;
+ }
+
+.resto-cards img {
+    width: 100%;
+    height: 172px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.image-container {
+	position: relative;
+}
+
+.image-text {
+	position: absolute;
+	width: 80px;
+	height: 25px;
+	padding-top: 6px;
+	top: 5%;
+	right: 5%;
+	z-index: 1;
+	text-align: center;
+	color: #1c7962;
+	font-size: 15px;
+	font-weight: 500;
+	background-color: #99E2D0;
+}
+
+.resto-cards .card-content {
+    width: 97%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;     
+	color: black;
+}
+
+.card-content {
+	position: relative;
+}
+
+.texte {
+	position: absolute;
+	left: 0;
+	padding-left: 10px;
+}
+
+.texte h3 {
+	margin: 13px 0 0 0;
+	font-size: 18px;
+}
+
+.texte p {
+	margin: 3px 0 0 0;
+	font-size: 17px;
+}
+
+.icon-clicked {
+	position: absolute;
+	right: 0;
+	padding: 20px 30px 0 0 ;
+	font-size: 25px;
+}
+
+.fa-heart {
+	font-weight: normal;
+}
+
+i:active {
+	background-color: linear-gradient(#FF79DA, #9356DC);
+}
