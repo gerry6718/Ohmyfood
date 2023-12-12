@@ -4,7 +4,8 @@
 }
 
 .main-container {
-	height: 2500px;
+	width: 105%;
+	height: 2115px;
 }
 
 h1 {
@@ -129,10 +130,9 @@ li::before {
 
 /***Restaurants***/
 .restaurants {
-	width: 100%;
 	height: 1265px;
 	background-color: #F3F6F4;
-	padding-left: 20px;
+	padding: 0 30px;
 }
 
 a {
@@ -150,7 +150,7 @@ a {
 }
 
 .resto-cards {
-	width: 90%;
+	width: 100%;
 }
 
 .resto-cards .card {
@@ -224,6 +224,55 @@ a {
 	font-weight: normal;
 }
 
-i:active {
-	background-color: linear-gradient(#FF79DA, #9356DC);
+/***Footer***/
+.footer {
+	width: 100%;
+	height: 270px;
+	background-color: #353535;
+	font-size: 18px;
+	color: white;
+	padding: 25px 0 0 20px;
+}
+
+.f_logo {
+	width: 140px;
+}
+
+.f-logo p {
+	font-family: shrikhand;
+	color: white;
+	font-weight: 400;
+	font-size: 20px;
+	margin-top: 0;
+}
+
+.infos {
+	width: 250px;
+	height: 150px;	
+}
+
+.infos p {
+	color: white;
+}
+
+.infos i {
+	color: white;
+	padding-top: 8px;
+	padding-right: 10px;
+}
+
+.proposer-resto {
+	display: flex;
+	justify-content: left;
+	padding-left: 5px;
+}
+
+.partenaire {
+	display: flex;
+	justify-content: left;
+}
+
+.infos p {
+	margin: 5px;
+	height: 25px;
 }
