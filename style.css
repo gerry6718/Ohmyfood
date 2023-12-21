@@ -1,10 +1,11 @@
 /******Général*******/
-* {
+@font-face {
 	font-family: 'Roboto', sans-serif;
+	font-family: 'Shrikhand', sans-serif;
 }
 
 .main-container {
-	width: 105%;
+	width: 100%;
 	height: 2115px;
 }
 
@@ -13,6 +14,11 @@ h1 {
 }
 
 body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+p {
 	margin: 0;
 }
 
@@ -41,8 +47,7 @@ header {
 }
 
 .fa-location-dot {
-	padding-bottom: 3px;
-	padding-right: 18px;
+	padding: 0 18px 3px 0;
 }
 
 /*****Hero*****/
@@ -55,16 +60,14 @@ header {
 
 .hero h2 {
 	font-size: 30px;
-	padding-left: 35px;
-	padding-right: 45px;
+	padding: 0 45px 0 35px;
 	margin-bottom: 10px;
 }
 
 .hero p {
 	font-size: 18px;
 	padding: 0 20px;
-	margin-top: 0;
-	margin-bottom: 30px;
+	margin: 0 0 30px 0;
 }
 
 button {
@@ -96,8 +99,7 @@ li {
 	align-items: center;
 	width: 95%;
 	height: 75px;
-	margin-left: 10px;
-	margin-bottom: 25px;
+	margin: 0 0 25px 10px;
 	background: #F3F6F4;
 	border-radius: 20px;
 	font-weight: bold;
@@ -135,7 +137,7 @@ li::before {
 	padding: 0 30px;
 }
 
-a {
+.resto-cards a {
 	text-decoration: none;
 }
 
@@ -147,6 +149,7 @@ a {
     background-color: white;
     border-radius: 20px; 
     margin-top: 20px;
+    border: none;
 }
 
 .resto-cards {
@@ -231,48 +234,42 @@ a {
 	background-color: #353535;
 	font-size: 18px;
 	color: white;
-	padding: 25px 0 0 20px;
+	padding: 20px 0 0 20px;
 }
 
-.f_logo {
-	width: 140px;
-}
-
-.f-logo p {
+.footer__logo {
 	font-family: shrikhand;
 	color: white;
 	font-weight: 400;
 	font-size: 20px;
-	margin-top: 0;
+	margin: 0 0 15px 0;
 }
 
-.infos {
-	width: 250px;
-	height: 150px;	
-}
-
-.infos p {
+.footer__link {
 	color: white;
+	text-decoration: none;
+	margin-bottom: 5px;	
+	font-size: 16px;
 }
 
-.infos i {
-	color: white;
-	padding-top: 8px;
-	padding-right: 10px;
+.footer__link--fa-solid {
+	font-size: 14px;
+	padding-top: 2px;
 }
 
-.proposer-resto {
-	display: flex;
-	justify-content: left;
-	padding-left: 5px;
+.footer__link--padding {
+	padding: 0 10px 5px 0;
 }
 
-.partenaire {
+.footer__link--flex {
 	display: flex;
 	justify-content: left;
 }
 
-.infos p {
-	margin: 5px;
-	height: 25px;
+.footer__link--margin {
+	margin-top: 5px;
 }
+
+
+
+
