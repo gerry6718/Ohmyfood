@@ -145,92 +145,91 @@ li::before {
 	height: 1260px;
 	background-color: #F3F6F4;
 	padding: 0 18px;
-}
 
-.resto-title {
-	padding-top: 40px;
-}
-
-.resto-cards {
-	width: 100%;
-
-	& a {
-		text-decoration: none;
+	& .resto-title {
+		padding-top: 40px;
 	}
 
-	& .card {
+	& .resto-cards {
 		width: 100%;
-    	height: 250px;
-    	background-color: white;
-    	border-radius: 20px; 
-    	margin-top: 20px;
-   	 	border: none;
 
-   	 	& .image-container {
-			position: relative;
+		& a {
+			text-decoration: none;
 		}
 
-		& .image-text {
-			position: absolute;
-			width: 80px;
-			height: 25px;
-			padding-top: 6px;
-			top: 5%;
-			right: 5%;
-			z-index: 1;
-			text-align: center;
-			color: #1c7962;
-			font-size: 15px;
-			font-weight: 500;
-			background-color: #99E2D0;
-		}
+		& .card {
+			width: 100%;
+    		height: 250px;
+    		background-color: white;
+    		border-radius: 20px; 
+    		margin-top: 20px;
+   	 		border: none;
 
-		& .like {
-			position: absolute;
-			right: 0;
-			padding: 20px 54px 0 0;
-			font-size: 25px;
-			cursor: pointer;			
-			
-			& .fa-heart {
-				font-weight: normal;
-				
-				&:active {
-					font-weight: 600;
-					color: #9356DC;
-				}			
-			}		
-		}
-	}
-
-	& img {
-    	width: 100%;
-    	height: 172px;
-    	border-radius: 20px 20px 0 0;
-    	object-fit: cover;
-	}
-
-	& .card-content {
-		position: relative;
-    	width: 97%;
-    	padding-left: 10px;
-    	display: flex;
-    	flex-direction: column;
-   		justify-content: space-between;     
-		color: black;
-
-		& .texte {
-			position: absolute;
-			left: 0;
-			padding-left: 15px;
-
-			& h3 {
-				margin: 13px 0 8px 0;
-				font-size: 18px;
+   	 		& .image-container {
+				position: relative;
 			}
 
-			& p {
-				font-size: 17px;
+			& .image-text {
+				position: absolute;
+				width: 80px;
+				height: 25px;
+				padding-top: 6px;
+				top: 5%;
+				right: 5%;
+				z-index: 1;
+				text-align: center;
+				color: #1c7962;
+				font-size: 15px;
+				font-weight: 500;
+				background-color: #99E2D0;
+			}	
+
+			& img {
+    			width: 100%;
+    			height: 172px;
+    			border-radius: 20px 20px 0 0;
+    			object-fit: cover;
+			}
+
+			& .card-content {
+				position: relative;
+    			width: 97%;
+    			padding-left: 10px;
+    			display: flex;
+    			flex-direction: column;
+   				justify-content: space-between;     
+				color: black;
+
+				& .texte {
+					position: absolute;
+					left: 0;
+					padding-left: 15px;
+
+					& h3 {
+						margin: 13px 0 8px 0;
+						font-size: 18px;
+					}
+
+					& p {
+						font-size: 17px;
+					}
+				}
+			}
+
+			& .like {
+				float: right;
+				padding: 20px 54px 0 0;
+				font-size: 25px;
+				cursor: pointer;			
+			
+				& .fa-heart {
+					font-weight: normal;
+				
+					&:active {
+						font-weight: 600;
+						color: #9356DC;
+					}			
+				}			
 			}	
 		}
 	}
@@ -432,41 +431,42 @@ br {
 /********Hero********/
 	.hero {
 		height: 215px;
+
+		& h2 {
+			margin: 20px 0 25px 0;
+		}
 	}
 
-	.hero h2 {
-		margin: 20px 0 25px 0;
-	}
 /*********Fonctionnement******/
-	.fonctionnement {
+	.fct {
 		height: 185px;
 		padding: 0 170px;
-	}
 
-	ol {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 30px;
+		& ol {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 30px;
+		}
 	}
 	
 /********Restaurants*********/	
 	.restaurants {
 		height: 675px;
 		padding: 0 170px;
-	}
 
-	.resto-title {
-		padding-top: 10px;
-	}
+		& .resto-title {
+			padding-top: 10px;
 
-	.resto-title h2 {
-		margin-bottom: 6px;
-	}
+			& h2 {
+				margin-bottom: 6px;
+			}
+		}
 
-	.resto-cards {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 30px 100px;
+		& .resto-cards {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 30px 100px;
+		}	
 	}
 
 /*********Footer********/
@@ -475,33 +475,36 @@ br {
 		height: 40px;
 		padding: 52px 20px 20px 20px;
 		position: relative;
-	}
 
-	.footer__logo {
-		position: absolute;
-		width: 110px;
-		height: 25px;
-		padding-top: 47px;
-		top: 5%;
-		right: 5%;
-		z-index: 1;
-	}
+		& .logo {
+			position: absolute;
+			width: 110px;
+			height: 25px;
+			padding-top: 45px;
+			top: 5%;
+			right: 5%;
+			z-index: 1;
 
-	.infos {
-		width: 85%;
-		text-align: right;
-		padding-top: 10px;
+			& p {
+				padding-left: 30px;
+			}
+		}
+		
+		& .infos {
+			text-align: right;
+			padding-right: 200px;
+		
+			& .link {
+				display: inline-block;
+				text-align: right;
+				padding: 0 10px;
+			
+				& .fa-solid {
+					font-size: 13px;
+					margin: 0;
+					padding-top: 3px;
+				}
+			}
+		}
 	}
-
-	.footer__link {
-		display: inline-block;
-		padding: 0 10px;
-	}
-
-	.footer__link--fa-solid {
-		font-size: 13px;
-		margin: 0;
-		padding-top: 3px;
-	}
-}
 
