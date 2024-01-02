@@ -4,11 +4,6 @@
 	font-family: 'Shrikhand', serif;
 }
 
-.main-container {
-	width: 100%;
-	height: 2100px;
-}
-
 h1 {
 	font-family: 'Shrikhand', serif;
 }
@@ -22,19 +17,10 @@ p {
 	margin: 0;
 }
 
-/*****Loader******/
-.loader {
-	border: 4px solid #9356DC;
-	border-top: 4px solid #FF79DA;
-	border-radius: 50%;
-	width: 30px;
-	height: 30px;
-	animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-	0% { transform:rotate(0deg); }
-	100% { transform:rotate(360de); }
+/*****Main container*****/
+.main-container {
+	width: 100%;
+	height: 2100px;
 }
 
 /*****Header******/
@@ -69,17 +55,17 @@ header {
 .hero {
 	background-color: #F3F6F4;
 	text-align: center;
-	height: 270px;
-	padding-top: 10px;
+	height: 285px;
 
 	& h2 {
-		font-size: 26px;
-		padding: 0 95px;
-		margin-bottom: 10px;
+		font-size: 24px;
+		padding: 38px 95px 12px 95px;
+		margin: 0;
 	}
 
 	& p {
 		font-size: 18px;
+		font-weight: 300;
 		padding: 0 50px;
 		margin: 0 0 30px 0;
 	}
@@ -302,7 +288,11 @@ br {
 .return-container {
 	display: inline;
 	padding: 25px 0 0 25px;
-	font-size: x-large;
+	
+	& .fa-arrow-left {
+		color: black;
+		font-size: x-large;
+	}
 
 	& a:hover {
 		display: block;
@@ -515,7 +505,6 @@ header {
 
 		& h2 {
 			font-size: 40px;
-			margin: 20px 0 25px 0;
 		}
 	}
 
