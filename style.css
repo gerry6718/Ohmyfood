@@ -70,7 +70,7 @@ header {
 	background-color: #F3F6F4;
 	text-align: center;
 	height: 270px;
-	padding-top: 14px;
+	padding-top: 10px;
 
 	& h2 {
 		font-size: 26px;
@@ -492,11 +492,29 @@ br {
 		height: 1250px;
 	}
 
+/********Header******/
+header {
+	height: 149px;
+
+	& .logo {
+		display: flex;
+	justify-content: center;
+	align-items: center;
+		height: 69px;
+		padding-top: 20px;
+	}
+
+	& .location {
+		height: 52px;
+	}
+}
+
 /********Hero********/
 	.hero {
-		height: 215px;
+		height: 230px;
 
 		& h2 {
+			font-size: 40px;
 			margin: 20px 0 25px 0;
 		}
 	}
