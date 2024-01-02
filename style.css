@@ -275,7 +275,7 @@ br {
 /************************************/
 /******Pages Menu*******/
 .second-container {
-	height: 1400px;
+	height: 1450px;
 }
 
 /*****header-menu******/
@@ -296,21 +296,24 @@ br {
 }
 
 .logo-menu {
-	padding: 20px 0 0 110px;
+	width: 100%;
+	padding-top: 20px;
+	text-align: center;
 }
 
 /********Carte-resto*********/
 .carte-resto {
+	height: 1355px;
 	position: relative;
 }
 
 /*****Photo******/
 .photo {
-	height: 250px;
+	height: 385px;
 
 	& img {
    		width: 100%;
-    	height: 250px;
+    	height: 385px;
     	object-fit: cover; 	
 	}
 }
@@ -324,7 +327,7 @@ br {
 	position: absolute;
 	top: 220px;
 	width: 100%;
-	height: 1125px;
+	height: 1135px;
 	background-color: #F3F6F4;
 	border-radius: 40px 40px 0 0;
 
@@ -398,8 +401,7 @@ br {
 			& .tarif {
 				width: 60px;
 				font-weight: bold;	
-				position: absolute;
-				right: 0;
+				float: right;
 			}
 		}
 
@@ -508,3 +510,72 @@ br {
 		}
 	}
 
+/*****Media Queries Page Menu*****/
+.second-container {
+	height: 1595px;
+
+	& #menu {
+		height: 95px;
+
+		& .logo-menu {
+			padding-top: 28px;
+		}	
+	}
+
+	& .carte-resto {
+		height: 1500px;
+
+		& .photo {
+			height: 385px;
+
+			& .img {
+				height: 385px;
+			}
+		} 
+
+		& .menu {
+			width: 70%;
+			height: 1155px;
+			top: 345px;
+			margin-left: 235px;
+
+			& .title {
+				justify-content: center;
+				padding-top: 20px;
+
+				& .like {
+					padding-top: 22px;
+				}
+			}
+
+			& .carte {
+
+				& h3 {
+					margin-left: 240px;
+				}
+
+				& li {
+					width: 56%;
+					margin: auto;
+					margin-bottom: 15px;
+				}
+
+				& .btn {
+					margin: 25px 445px;
+				}
+			}
+		}
+	}
+}
+
+.scd-container {
+	height: 1680px;
+
+	& .carte-resto-2 {
+		height: 1585px ;
+
+		& .menu-2 {
+			height: 1250px;
+		}
+	}
+}
