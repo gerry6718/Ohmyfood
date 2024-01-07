@@ -479,7 +479,12 @@ br {
 					color: #99E2D0;
 					font-weight: bold;	
 				}
+			
 			}
+			&:hover .check {
+					margin-right: 0;
+				}
+		
 		}
 
 		& .btn {
@@ -544,7 +549,7 @@ br {
 /****** Media queries ***********/
 @media screen and (min-width: 768px) {
 	.main-container {
-		height: 1250px;
+		height: 1278px;
 	}
 
 /********Header******/
@@ -587,7 +592,7 @@ header {
 	
 /********Restaurants*********/	
 	.restaurants {
-		height: 675px;
+		height: 670px;
 		padding: 0 170px;
 
 		& .resto-title {
