@@ -409,7 +409,7 @@ br {
 		height: 1035px;
 		margin-top: -12px;
 
-		& h3{
+		& h3 {
 			padding: 24px 0 5px 0;
 			font-weight: normal;
 			font-size: 16px;
@@ -419,7 +419,8 @@ br {
 			margin-left: 15px;
 		}
 
-		& h4{
+		& h4 {
+			width: 80%;
 			font-size: 18px;
 			margin: 0;
 			padding: 12px 0 4px 0;
@@ -439,11 +440,10 @@ br {
 
 		& li {
 			display: block;
-			width: 90%;
 			height: 67px;
 			background: white;
 			padding-left: 15px;
-			margin: 0 14px 15px 13px;
+			overflow: hidden;
 
 			& .detail {
 				width: 280px;
@@ -452,17 +452,33 @@ br {
 			}
 
 			& .tarif {
-				width: 60px;
+				width: 40px;
 				font-weight: bold;	
 				float: right;
 			}
-			& i {
-				font-size: 23px;
-				color: #99E2D0;
-				float: right;
-				width: 50px;
-				height: 67px;
 
+			& .check {
+				display: grid;
+				place-items: center;
+				width: 60px;
+				height: 67px;
+				float: right;
+				background-color: #99E2D0;
+				border-radius: 0 20px 20px 0;
+				margin-right: -60px;
+				transition: margin-right 0.5s;
+
+				& .fa-check {
+					display: grid;
+					place-items: center;
+					font-size: 15px;
+					background: white;
+					border-radius: 50%;
+					width: 20px;
+					height: 20px;
+					color: #99E2D0;
+					font-weight: bold;	
+				}
 			}
 		}
 
