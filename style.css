@@ -479,12 +479,11 @@ br {
 					color: #99E2D0;
 					font-weight: bold;	
 				}
-			
 			}
+
 			&:hover .check {
-					margin-right: 0;
-				}
-		
+				margin-right: 0;
+			}
 		}
 
 		& .btn {
