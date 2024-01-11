@@ -477,21 +477,24 @@ br {
 			& .detail-menu {
 				overflow: hidden;
 				white-space: nowrap;
-				text-overflow: ellipsis;}
-			
+				text-overflow: ellipsis;
+
 				& .detail {
 					font-weight: normal;
 					font-size: 14px;
 				}
-
-				& .tarif {
-					display: ;
-					width: 40px;
-					font-weight: bold;	
-					float: right;
-					padding-right: 5px;
-				}
 			}
+
+			& .tarif {
+				position: relative;
+				top: -30%;
+				right: 0;
+				width: 40px;
+				font-weight: bold;	
+				float: right;
+				padding-right: 5px;
+			}
+			
 		}
 
 		& .btn-cde {
