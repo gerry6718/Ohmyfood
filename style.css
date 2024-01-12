@@ -320,6 +320,10 @@ br {
 	height: 1500px;
 }
 
+.scd-container {
+	height: 1595px;
+}
+
 /*****header-menu******/
 #menu {	
 	display: flex;
@@ -353,6 +357,10 @@ br {
 	position: relative;
 }
 
+.carte-resto-2 {
+		height: 1530px ;
+}
+
 /*****Photo******/
 .photo {
 	height: 385px;
@@ -366,14 +374,13 @@ br {
 
 /******Menu*******/
 .menu-2 {
-		height: 1250px;
+		height: 1310px;
 	}
 
 .menu {
 	position: absolute;
 	top: 220px;
 	width: 100%;
-	height: 1215px;
 	background-color: #F3F6F4;
 	border-radius: 40px 40px 0 0;
 
@@ -405,7 +412,6 @@ br {
 	}
 
 	& .carte {
-		position: relative;
 		height: 1035px;
 		margin-top: -12px;
 
@@ -420,7 +426,6 @@ br {
 		}
 
 		& h4 {
-			width: 80%;
 			font-size: 17px;
 			margin: 0;
 			padding: 12px 0 4px 0;
@@ -475,9 +480,15 @@ br {
 			}
 
 			& .detail-menu {
+				padding-right: 58px;
 				overflow: hidden;
 				white-space: nowrap;
 				text-overflow: ellipsis;
+
+				& h4 {
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
 
 				& .detail {
 					font-weight: normal;
@@ -519,32 +530,19 @@ br {
 	}
 }
 
-.scd-container {
-	height: 1500px;
-
-	& .carte-resto-2 {
-		height: 1435px ;
-
-		& .menu-2 {
-			height: 1215px;
-		}
-	}
-}
-
-
 .anim-1 li {
 	opacity: 0;
-	animation: anim 2s ease-in-out forwards;
+	animation: anim 1s ease-in-out forwards;
 }
 
 .anim-2 li {
 	opacity: 0;
-	animation: anim 6s ease-in-out forwards;
+	animation: anim 3s ease-in-out forwards;
 }
 
 .anim-3 li {
 	opacity: 0;
-	animation: anim 8s ease-in-out forwards;
+	animation: anim 4s ease-in-out forwards;
 }
 
 @keyframes anim {
@@ -572,8 +570,8 @@ header {
 
 	& .logo {
 		display: flex;
-	justify-content: center;
-	align-items: center;
+		justify-content: center;
+		align-items: center;
 		height: 69px;
 		padding-top: 20px;
 	}
@@ -584,84 +582,84 @@ header {
 }
 
 /********Hero********/
-	.hero {
-		height: 230px;
+.hero {
+	height: 230px;
 
-		& h2 {
-			font-size: 40px;
-		}
+	& h2 {
+		font-size: 40px;
 	}
+}
 
 /*********Fonctionnement******/
-	.fct {
-		height: 185px;
-		padding: 0 170px;
+.fct {
+	height: 185px;
+	padding: 0 170px;
 
-		& ol {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			gap: 30px;
-		}
+	& ol {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 30px;
 	}
+}
 	
 /********Restaurants*********/	
-	.restaurants {
-		height: 670px;
-		padding: 0 170px;
+.restaurants {
+	height: 670px;
+	padding: 0 170px;
 
-		& .resto-title {
-			padding-top: 10px;
+	& .resto-title {
+		padding-top: 10px;
 
-			& h2 {
-				margin-bottom: 6px;
-			}
+		& h2 {
+			margin-bottom: 6px;
 		}
-
-		& .resto-cards {
-			display: grid;
-			grid-template-columns: repeat(2, 1fr);
-			gap: 30px 100px;
-		}	
 	}
+
+	& .resto-cards {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 30px 100px;
+	}	
+}
 
 /*********Footer********/
-	.footer {
-		width: auto;
-		height: 40px;
-		padding: 52px 20px 20px 20px;
-		position: relative;
+.footer {
+	width: auto;
+	height: 40px;
+	padding: 52px 20px 20px 20px;
+	position: relative;
 
-		& .logo {
-			position: absolute;
-			width: 110px;
-			height: 25px;
-			padding-top: 45px;
-			top: 5%;
-			right: 5%;
-			z-index: 1;
+	& .logo {
+		position: absolute;
+		width: 110px;
+		height: 25px;
+		padding-top: 45px;
+		top: 5%;
+		right: 5%;
+		z-index: 1;
 
-			& p {
-				padding-left: 30px;
-			}
+		& p {
+			padding-left: 30px;
 		}
+	}
 		
-		& .infos {
+	& .infos {
+		text-align: right;
+		padding-right: 200px;
+		
+		& .link {
+			display: inline-block;
 			text-align: right;
-			padding-right: 200px;
-		
-			& .link {
-				display: inline-block;
-				text-align: right;
-				padding: 0 10px;
+			padding: 0 10px;
 			
-				& .fa-solid {
-					font-size: 13px;
-					margin: 0;
-					padding-top: 3px;
-				}
+			& .fa-solid {
+				font-size: 13px;
+				margin: 0;
+				padding-top: 3px;
 			}
 		}
 	}
+}
 
 /*****Media Queries Page Menu*****/
 .second-container {
